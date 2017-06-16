@@ -1,5 +1,8 @@
 # SE8ProgrammerI
 
+This repository is a compilation of notes and problems that I found useful on my journey to taking the Java SE 8 Programmer I certification. It is in no way thorough but contains brief explanations and quick bullets that I found to be important. I follow the OCA: Java SE 8 Programmer I Study Guide by Jeanne Boyarsky and Scott Selikoff. 
+
+### Chapter 1 : Building Blocks 
 * Java class structure:
     - fields and methods within a class are called members
     - you can put more than one class in the same file but
