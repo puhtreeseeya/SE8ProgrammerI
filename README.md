@@ -99,7 +99,7 @@ add special numerical literals by this convention...
 * Java Operators:
     - Operators listed by decreasing precedence: 
             |   Operators   |       Type        |
-            |   ----        |      ------       |
+            |---------------|-------------------| 
             |   (), []. .   |   Paranthetical   |
             |   i++,i--     |   Postfix Unary   |
             |   ++i, --i    |   Prefix Unary    |
@@ -110,9 +110,9 @@ add special numerical literals by this convention...
             |   ==, !=      |   Equity          |
             |   &           |   Bit AND         |
             |   ^           |   Bit XOR         |
-            |   '|'         |   Bit OR          |
+            |               |   Bit OR          |
             |   &&          |   Logical AND     |
-            |   ||          |   Logical OR      |
+            |               |   Logical OR      |
             |   ?:          |   Ternary         |
             |   =           |   Assignment      |
 
