@@ -98,6 +98,7 @@ add special numerical literals by this convention...
 
 * Java Operators:
     - Operators listed by decreasing precedence: 
+    
             |   Operators   |       Type        |
             |---------------|-------------------| 
             |   (), []. .   |   Paranthetical   |
