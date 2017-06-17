@@ -37,7 +37,7 @@
     -byte          8bit integral            0
     -short         16bit integral           0
     -int           32bit integral           0
-    -long          64bit integral           0
+    -long          64bit integral           000L
     -float         32bit floating pt        0.0f
     -double        64bit floating pt        0.0
     -char          16bit unicode            '/000x'
