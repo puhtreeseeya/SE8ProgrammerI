@@ -93,3 +93,100 @@ add special numerical literals by this convention...
     - Encapsulation
     - Platform Independent
     - Memory Management
+    
+### Chapter 2 : Operators and Statements 
+
+* Java Operators:
+    - Operators listed by decreasing precedence: 
+            |   Operators   |       Type        |
+            |   ----        |      ------       |
+            |   (), []. .   |   Paranthetical   |
+            |   i++,i--     |   Postfix Unary   |
+            |   ++i, --i    |   Prefix Unary    |
+            |   * ,/ ,%     |   Multiplicative  |
+            |   +,-         |   Additive        | 
+            |   <<, >>      |   Shift           |
+            |   <,<=,>,>=   |   Relational      |
+            |   ==, !=      |   Equity          |
+            |   &           |   Bit AND         |
+            |   ^           |   Bit XOR         |
+            |   '|'         |   Bit OR          |
+            |   &&          |   Logical AND     |
+            |   ||          |   Logical OR      |
+            |   ?:          |   Ternary         |
+            |   =           |   Assignment      |
+
+    - Numeric Promotion Rules:
+        1. if two values have different types ==> java will promote one of the values
+        to the larger of the two types
+        (e.g. int x=1; long y = 33; x+y //result type is long)
+
+        2. if one value is an integral and the other is a float ==> java will
+        promote integrals to floats
+        (e.g. double x = 29.1, float y = 2.1; x+y //result type is float)
+
+        3. when byte, short, and char are used with a binary arithmetic operator (e.g. +, -, * ,..)
+        ==> java promotes them to type int
+        (e.g. short x = 10, y =3; x + y //type of int)
+
+* Unary Operators:
+    - postfix: i = i++ (return value then increment)
+    - prefix: i = ++i (increment then return value)
+
+* Casting:
+    - NOTE: shorts are automatically promoted to ints when used with a binary operator
+    short x = 10
+    short y = 3
+    short z = x * y <-- int // compilation error
+    short z = (short) (x * y);
+
+* Logic Operators:
+    boolean x; boolean y;
+    x & y == x && y (for booleans ONLY!)
+    x | y == x || y
+
+* Equality:
+    int x = 4;
+    double y = 5.00;
+    - (x == y //true) because x is promoted to a double
+    - equality does not work on different types
+
+* Java Statements: For the purposes of the exam, you will need to know the proper syntax of these statements.
+    -  If statement: Curly braces required for multi-line statements, optional for single lined statement!
+    -  If - else statement: above answer^
+    - While statement: above answer^
+    - Do - While: above answer^
+    - For statement: above answer^
+    - For-Each statement: above answer^
+
+    - Switch statement:
+        switch(variableToTest) { <-- required!
+            case final variable:
+                //branch
+                break; <-- optional!
+            default: <-- can appear anywhere within statement
+                //branch
+            case "string literal":
+                //branch
+        }
+        NOTE: all cases must match the type of the variableToTest!
+
+    - Do-While statement: statement block done first, then boolean is checked!
+        do {
+            //does stuff
+        } while (booleanExpression);
+
+    - For statement:
+        for(initializer; booleanExpression; updateStatement) {
+            //body
+        }
+        NOTE: all components of For statement (initializer, boolean expression and update statements)
+        are ALL optional!
+
+    - For each statement:
+        for(dataTYpe instance : collection) {
+
+        }
+        NOTE: collection must either be an array or a java Iterable object!
+
+
