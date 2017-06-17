@@ -118,17 +118,18 @@ add special numerical literals by this convention...
             |   =           |   Assignment      |
 
     - Numeric Promotion Rules:
-        1. if two values have different types ==> java will promote one of the values
+     1. if two values have different types ==> java will promote one of the values
         to the larger of the two types
         (e.g. int x=1; long y = 33; x+y //result type is long)
 
-        2. if one value is an integral and the other is a float ==> java will
+     2. if one value is an integral and the other is a float ==> java will
         promote integrals to floats
         (e.g. double x = 29.1, float y = 2.1; x+y //result type is float)
 
-        3. when byte, short, and char are used with a binary arithmetic operator (e.g. +, -, * ,..)
+     3. when byte, short, and char are used with a binary arithmetic operator (e.g. +, -, * ,..)
         ==> java promotes them to type int
         (e.g. short x = 10, y =3; x + y //type of int)
+       
 
 * Unary Operators:
     - postfix: i = i++ (return value then increment)
@@ -153,13 +154,9 @@ add special numerical literals by this convention...
     - equality does not work on different types
 
 * Java Statements: For the purposes of the exam, you will need to know the proper syntax of these statements.
-    -  If statement: Curly braces required for multi-line statements, optional for single lined statement!
-    -  If - else statement: above answer^
-    - While statement: above answer^
-    - Do - While: above answer^
-    - For statement: above answer^
-    - For-Each statement: above answer^
-
+    NOTE: Curly braces required for multi-line statements, optional for single lined statement! (Applies to if, if else, 
+    while, do-while, for, for each) 
+    
     - Switch statement:
         switch(variableToTest) { <-- required!
             case final variable:
@@ -186,7 +183,7 @@ add special numerical literals by this convention...
 
     - For each statement:
         for(dataTYpe instance : collection) {
-
+            //does stuff! 
         }
         NOTE: collection must either be an array or a java Iterable object!
 
