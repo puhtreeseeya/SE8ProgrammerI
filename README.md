@@ -158,33 +158,41 @@ add special numerical literals by this convention...
     while, do-while, for, for each) 
     
     - Switch statement:
-        switch(variableToTest) { <-- required!
+    ```java
+        switch(variableToTest) { //<-- required!
             case final variable:
                 //branch
-                break; <-- optional!
-            default: <-- can appear anywhere within statement
+                break; //<-- optional!
+            default: //<-- can appear anywhere within statement
                 //branch
             case "string literal":
                 //branch
         }
-        NOTE: all cases must match the type of the variableToTest!
+        //NOTE: all cases must match the type of the variableToTest!
+    ```
 
     - Do-While statement: statement block done first, then boolean is checked!
+    ```java
         do {
             //does stuff
         } while (booleanExpression);
+    ```
 
     - For statement:
+    ```java
         for(initializer; booleanExpression; updateStatement) {
             //body
         }
-        NOTE: all components of For statement (initializer, boolean expression and update statements)
-        are ALL optional!
+        //NOTE: all components of For statement (initializer, boolean expression and update statements)
+        //are ALL optional!
+    ```
 
     - For each statement:
+    ```java
         for(dataTYpe instance : collection) {
             //does stuff! 
         }
-        NOTE: collection must either be an array or a java Iterable object!
+        //NOTE: collection must either be an array or a java Iterable object!
+    ```
 
 
